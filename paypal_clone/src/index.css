@@ -104,6 +104,9 @@ main {
     }
     .Features {
       @apply flex flex-col items-center justify-center gap-44;
+      h3{
+        opacity: 1;
+      }
     }
 
     .Brand div {

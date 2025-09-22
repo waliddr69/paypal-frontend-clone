@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
           { scale, transformOrigin: "center", ease: "none" },
           0
         )
-        .to(".hero-photo h3", { opacity: 0 }, 0)
+        .to(".hero-photo .text", { opacity: 0 }, 0)
         .to(".hero-title", { yPercent: -150 }, 0)
         .to(".Hero .buttons", { yPercent: -550 }, 0)
         .to(".Hero .photo-title.left", { left: x }, 0);
@@ -107,7 +107,7 @@ const Hero: React.FC = () => {
             </h1>
 
             <div className="hero-photo flex flex-col py-5 absolute h-10/12 bg-white w-[350px] sm:w-[400px] md:w-[500px] lg:w-[39%] overflow-y-hidden rounded-4xl items-center -bottom-6/12 gap-1.5">
-              <h3 className="mt-2 font-extrabold">PayPal</h3>
+              <h3 className="text mt-2 font-extrabold">PayPal</h3>
               <div className="cover w-[90%] h-[100%] rounded relative">
                 <h2 className="photo-title left absolute sm:mt-1  -left-2/3">
                   Payez

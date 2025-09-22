@@ -72,7 +72,7 @@ const Features: React.FC = () => {
       <section className="Features flex flex-col items-center justify-center gap-44">
         <div className="wrapper flex flex-row w-[95%] lg:w-[80%] gap-10 lg:gap-0 flex-wrap">
           <div className="feature-text flex flex-col justify-between w-full lg:w-[50%]">
-            <h3 className="w-full lg:w-[60%]  " style={{opacity:"1"}}>Payez à votre façon</h3>
+            <h3 className="w-full lg:w-[60%]  " style={{opacity:"0"}}>Payez à votre façon</h3>
             <div className="flex flex-col gap-7 w-full lg:w-[50%]">
               <p style={{ lineHeight: "1.7rem", fontWeight: "600" }}>
                 Faites vos achats sur vos sites préférés avec PayPal. Ayez

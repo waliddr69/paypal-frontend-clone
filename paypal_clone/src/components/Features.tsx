@@ -32,7 +32,9 @@ const Features: React.FC = () => {
           pinSpacing: true,
         },
       })
-      
+      .to(".Features",{
+        opacity:0
+      })
       .to(
         ".Brand",
         {

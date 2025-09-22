@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "tailwindcss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+html,
+#root,
+main {
+  font-family: "poppins", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .heading-hero {
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    font-size: clamp(3.0625rem, -1.9375rem + 7.8125vw, 7.4375rem);
+  }
+
+  @media (max-width: 640px) {
+    .heading-hero {
+      font-weight: 900;
+      font-size: 2.5rem;
+      margin-top: 3rem;
+    }
+  }
+
+  .photo-title {
+    font-weight: 900;
+    color: white;
+    font-size: 2.488rem;
+  }
+
+  @media (max-width: 640px) {
+    .photo-title {
+      font-size: 1.6rem;
+    }
+  }
+  h3 {
+    font-weight: 900;
+    font-size: 2.8rem;
+  }
+
+  .security {
+    font-size: 3.5rem;
+  }
+
+  @media (max-width: 640px) {
+    h3 {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@theme {
+  --color-blue: #60cdff;
+  --color-cyan: #8ddbff;
+}
+
+@utility flex-center {
+  @apply flex justify-center items-center;
+}
+
+@layer components {
+  main {
+    nav {
+      ul {
+        li:not(:last-child) {
+          cursor: pointer;
+          font-weight: 500;
+          @apply py-2 px-1.5 rounded-full hover:sm:bg-cyan hover:sm:font-semibold transition-all duration-300;
+        }
+        li:hover span {
+          @apply sm:rotate-180 transition-transform duration-150;
+        }
+      }
+
+      .cta {
+        button {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .Hero {
+      .hero-photo {
+        .cover {
+          background-image: url("/FeaturedHomepageHero_size-Mobile.jpg");
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+        }
+      }
+    }
+    .Features {
+      @apply flex flex-col items-center justify-center gap-44;
+    }
+
+    .Brand div {
+      background-image: url("/brand-moment-02_size-all.jpg");
+    }
+    .Brand h2 {
+      font-size: 5.8rem;
+    }
+    @media (max-width: 640px) {
+      .Brand h2 {
+        font-size: 3.8rem;
+      }
+    }
+    @media (max-width: 378px) {
+      .Brand h2 {
+        font-size: 2.8rem;
+      }
+    }
+    
+    .Why {
+      .recevoir {
+        color: rgba(255, 255, 255, 0.277);
+      }
+    }
+  }
+}
+
+@media (max-width: 378px) {
+  .hero-photo {
+    width: 300px;
+  }
+}

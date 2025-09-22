@@ -129,7 +129,7 @@ const Why: React.FC = () => {
   return (
     <>
       <div className="why-wrapper">
-        <section className="Why bg-blue-800 h-fit p-5 md:-mt-96  translate-y-[-96%] lg:translate-y-[-128%] flex-center">
+        <section className="Why bg-blue-800 h-fit p-5   translate-y-[-96%] lg:translate-y-[-128%]  flex-center">
           <div className="wrapper w-[70%]  flex flex-col gap-50">
             <h3 className="text-white text-md lg:text-7xl lg:leading-20">
               Envoyez de l’argent en toute sécurité et sans délai, à qui vous
